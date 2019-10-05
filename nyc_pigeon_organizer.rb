@@ -17,7 +17,7 @@ def nyc_pigeon_organizer(data) # given method and arg. with parameter
             pig_hash[pigeon][attribute] = []
           end
           pig_hash[pigeon][attribute].push(feature_name.to_s);
-          
+
       end
     end
   end
