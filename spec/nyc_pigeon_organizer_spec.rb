@@ -24,6 +24,7 @@ describe "NYC Pigeon Organizer" do
         }
       }
       @result = nyc_pigeon_organizer(pigeon_data)
+      print @result
     end
 
     context "Overview: Data Type and Attributes of Return Value" do
