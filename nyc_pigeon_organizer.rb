@@ -1,4 +1,6 @@
 require 'pry'
+require 'pp'
+
 def nyc_pigeon_organizer(data) # given method and arg. with parameter
   new_hash = {} # created empty hash for new hash
   data.each do |attribute, attribute_values| # takes each element of an array
@@ -11,6 +13,6 @@ def nyc_pigeon_organizer(data) # given method and arg. with parameter
     end
   end
 
-  print new_hash
+  pp new_hash
 
 end
