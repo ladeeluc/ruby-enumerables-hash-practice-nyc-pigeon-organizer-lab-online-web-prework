@@ -3,7 +3,7 @@ require 'pp'
 
 def nyc_pigeon_organizer(data) # given method and arg. with parameter
   pp data
-  new_hash = {} # created empty hash for new hash
+  new_hash = Hash.new # created empty hash for new hash
   data.each do |attribute, attribute_values| # takes each element of an array
     #creating a place holder. retruns orginal unchanged object
     attribute_values.each do |feature_name, pigeons|#takes each element of an array
