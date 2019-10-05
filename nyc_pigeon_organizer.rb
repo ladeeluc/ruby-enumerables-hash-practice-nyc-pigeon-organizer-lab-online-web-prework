@@ -7,9 +7,9 @@ def nyc_pigeon_organizer(data) # given method and arg. with parameter
   data.each do |attribute, attribute_values| # takes each element of an array
     #creating a place holder. retruns orginal unchanged object
     attribute_values.each do |feature_name, pigeons|#takes each element of an array
-      pp pigeons
       #creating a place holder. retruns orginal unchanged object
       pigeons.each do |pigeon|#takes each element of an array
+          pp pigeon
           new_hash[pigeon][attribute].push(feature_name)
           pp pigeon
           pp attribute
