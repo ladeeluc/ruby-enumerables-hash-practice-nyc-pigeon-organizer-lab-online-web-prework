@@ -11,6 +11,6 @@ def nyc_pigeon_organizer(data) # given method and arg. with parameter
     end
   end
 
-  puts new_hash
+  print new_hash
 
 end
