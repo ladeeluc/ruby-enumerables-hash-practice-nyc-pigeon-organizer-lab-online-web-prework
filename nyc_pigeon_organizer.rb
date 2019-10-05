@@ -2,10 +2,10 @@ require 'pry'
 
 def nyc_pigeon_organizer(data) # given method and arg. with parameter
   pig_hash = {} # created empty hash for new hash
-  data.each do |attribute, attribute_values| # takes each element of an array
-    #creating a place holder. retruns orginal unchanged object
+  data.each do |attribute, attribute_values| # takes each element of the  whole array
+    #creating a place holder. retruns orginal unchanged hash
     attribute_values.each do |feature_name, pigeons|#takes each element of an array
-      #creating a place holder. retruns orginal unchanged object
+      #creating a place holder. retruns orginal unchanged hash
       pigeons.each do |pigeon|#takes each element of an array
           if pig_hash[pigeon] == nil
             pig_hash[pigeon] = {}
