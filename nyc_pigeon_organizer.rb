@@ -11,7 +11,8 @@ def nyc_pigeon_organizer(data) # given method and arg. with parameter
       pigeons.each do |pigeon|# makes the string of  names
           if pig_hash[pigeon] == nil #asks if not stringthere. if it not there then it
             # creates an empty hash
-            pig_hash[pigeon] = {} # creates empty hash for every bird name in values for all keys a empty array
+            pig_hash[pigeon] = {} # creates empty hash for every bird name in values for all keys a empty array. loops
+            # through new hash iterate through string of names of pigeons
           end
           if pig_hash[pigeon][attribute] == nil
             pig_hash[pigeon][attribute] = []
