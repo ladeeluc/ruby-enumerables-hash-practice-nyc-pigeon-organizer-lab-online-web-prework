@@ -16,12 +16,12 @@ def nyc_pigeon_organizer(data) # given method and arg. with parameter
           if pig_hash[pigeon][attribute] == nil #loops
           # through new hash to iterate through if NOT string of names of pigeons in second key or data structure to pull out
           # values for the next key in a string form into an array
-            pig_hash[pigeon][attribute] = [] # if don't have value from second key or datat structure then put in  empty array
+            pig_hash[pigeon][attribute] = [] # if don't have value from second key or data structure then put in  empty array
           end
 
-          pig_hash[pigeon][attribute].push(feature_name.to_s)#
+          pig_hash[pigeon][attribute].push(feature_name.to_s)# appends second key to end of new array in string form to array
       end
     end
   end
-  pig_hash
+  pig_hash# returns new array
 end
