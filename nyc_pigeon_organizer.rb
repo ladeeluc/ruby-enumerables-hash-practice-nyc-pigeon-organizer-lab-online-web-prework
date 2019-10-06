@@ -8,17 +8,18 @@ def nyc_pigeon_organizer(data) # given method and arg. with parameter
     attribute_values.each do |feature_name, pigeons|#takes each element of an array
       #creating a place holder. retruns orginal unchanged hash. iterates through the array of feature_name and pigeons
       # to pull out the values which are the names of the pigeons in a string for each key
-      pigeons.each do |pigeon|# makes the string of  names
-          if pig_hash[pigeon] == nil #asks if not stringthere. if it not there then it
-            # creates an empty hash
-            pig_hash[pigeon] = {} # creates empty hash for every bird name in values for all keys a empty array. loops
-            # through new hash iterate through string of names of pigeons
+      pigeons.each do |pigeon|# makes the string of names
+          if pig_hash[pigeon] == nil #asks if not string there. if it not there then it
+            # creates an empty hash for each string value
+            pig_hash[pigeon] = {} # creates empty hash for every bird name in values for all keys a empty array. 
           end
-          if pig_hash[pigeon][attribute] == nil
-            pig_hash[pigeon][attribute] = []
+          if pig_hash[pigeon][attribute] == nil #loops
+          # through new hash to iterate through if NOT string of names of pigeons in second key or data structure to pull out
+          # values for the next key in a string form into an array
+            pig_hash[pigeon][attribute] = [] # if don't have value from second key or datat structure then put in  empty array
           end
 
-          pig_hash[pigeon][attribute].push(feature_name.to_s);
+          pig_hash[pigeon][attribute].push(feature_name.to_s)# 
       end
     end
   end
